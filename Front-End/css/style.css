@@ -176,7 +176,9 @@ main{
     display: flex;
     padding: 0px 150px;
     color: #fff;
-    margin: 80px 0px;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #5555554a;
 }
 
 .comoFunciona ol{
@@ -249,4 +251,95 @@ main{
     color: #aaaaaa;
     font-size: 1.3rem;
     font-weight: 700;
+}
+
+.modelo{
+    display: flex;
+    padding: 80px 150px;
+    color: #fff;
+    background-color: #0A1220;
+    /* margin: 80px 0px; */
+}
+
+.modelo ol{
+    list-style: none;
+}
+
+.modelo ol li{
+    display: flex;
+    border-top: .01px solid #7c7c7c6c;
+    margin-top: 10px;
+    width: 45vw;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.modelo ol li span{
+    width: 40px;      /* coluna fixa para o número */
+    flex-shrink: 0;
+    color: #fff200;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.modelo ol li p{
+    color: #8b8b8b;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.modelo ol li div{
+    margin-top: 20px;
+    flex: 1;
+}
+
+.modelo ol li div h1{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.modelo ol li div p{
+    font-size: 1.4rem;
+    color: #aaaaaa;
+    margin-top: 15px;
+    text-transform: none;
+}
+
+.div_modelo_texto{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.div_modelo_texto p:first-child{
+    font-size: 1.5rem;
+    color: #8b8b8b;
+    text-transform: uppercase;
+}
+
+.div_modelo_texto h1{
+    font-size: 4.6rem;
+}
+
+.modelo_p_intro{
+    font-size: 1.3rem;
+    color: #a7a7a7;
+    font-weight: 500;
+    width: 400px;
+}
+
+.div_modelo_texto a{
+    color: #aaaaaa;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.modelo_p_aviso{
+    border-left: #fff200 1px solid;
+    padding-left: 15px;
+    font-size: 1.3rem;
+    width: 400px;
+    color: #b3b3b3;
 }
