@@ -4,34 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Wars</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header style="border: 2px solid red;">
+    <header>
         <div class="tituloHeader">
             <h1>ARQUIVO SKYWALKER</h1>
             <p>QUIZ COM PERSONAGENS DO EPISÓDIO I-IX</p>
         </div>
 
-        <nav class="navHeader" style="border: 2px solid blue;">
+        <nav class="navHeader" aria-label="Navegação principal">
             <ol>
-                <li>Inicio</li>
-                <li>Cronologia</li>
-                <li>Quiz</li>
-                <li>Dashboard</li>
+                <li class="ativo"><a href="#inicio">Inicio</a></li>
+                <li><a href="#cronologia">Cronologia</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
             </ol>
         </nav>
         <div class="div_buttonsHeader">
-            <button>Fazer o Quiz</button>
+            <a href="#quiz" class="botaoQuiz">Fazer o Quiz</a>
         </div>
     </header>
+
     <main>
-        <section class="hero"></section>
+        <section class="hero" id="inicio">
+            <h1>
+                Qual personagem da Saga Skywalker combina com você?
+            </h1>
+        </section>
+
         <section class="comoFunciona"></section>
         <section class="modelo"></section>
-        <section class="cronologia"></section>
-        <section class="resultado"></section>
-        <section class="cta"></section>
+        <section class="cronologia" id="cronologia"></section>
+        <section class="resultado" id="dashboard"></section>
+        <section class="cta" id="quiz"></section>
     </main>
+
     <footer>
         <div>
             <div></div>
@@ -41,5 +49,18 @@
         <hr>
         <div></div>
     </footer>
+
+    <script>
+        const itensMenu = document.querySelectorAll(".navHeader ol li");
+
+        itensMenu.forEach((item) => {
+            item.querySelector("a").addEventListener("click", () => {
+                itensMenu.forEach((outroItem) => {
+                    outroItem.classList.remove("ativo");
+                });
+                item.classList.add("ativo");
+            });
+        });
+    </script>
 </body>
 </html>
