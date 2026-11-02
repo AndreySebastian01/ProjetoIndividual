@@ -113,6 +113,17 @@
                 item.classList.add("ativo");
             });
         });
+
+        const header = document.querySelector("header");
+        const hero = document.querySelector(".hero");
+
+        const atualizarHeader = () => {
+            const limiteDeRolagem = 80;
+            header.classList.toggle("header-solid", window.scrollY > limiteDeRolagem);
+        };
+
+        atualizarHeader();
+        window.addEventListener("scroll", atualizarHeader);
     </script>
 </body>
 </html>
