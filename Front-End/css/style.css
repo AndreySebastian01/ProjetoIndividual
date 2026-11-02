@@ -39,6 +39,12 @@ header{
     z-index: 1000;
     color: #fff;
     padding-left: 150px;
+    background-color: transparent;
+    transition: background-color .3s ease;
+}
+
+header.header-solid{
+    background-color: #070B14;
 }
 
 header h1{
