@@ -17,16 +17,22 @@ header{
     padding: 10px 60px;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid black;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     z-index: 1000;
+    color: #fff;
+    padding-left: 150px;
 }
 
 header h1{
     font-size: 1.4rem;
+}
+
+.tituloHeader p{
+    color: #c5c5c5;
 }
 
 .navHeader ol {
@@ -62,10 +68,28 @@ main section {
 
 .navHeader ol li.ativo {
     color: #fff;
+    position: relative;
+}
+
+.navHeader ol li.ativo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -21px;
+    width: 100%;
+    height: 1px;
+    background-color: #fff200;
 }
 
 .navHeader ol li.ativo::before {
     color: #fff200;
+}
+
+.hero span{
+    text-decoration: underline;
+    text-decoration-color: #fff200;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
 }
 
 .botaoQuiz {
@@ -73,13 +97,57 @@ main section {
     text-decoration: none;
     background-color: #fff200;
     color: black;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 10px 25px;
+    border-radius: 2px;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 main{
-    padding: 0px 60px;
-    padding-top: 80px;
+    /* padding: 0px 110px; */
+    
+    /* background-size: cover; */
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    background-image:
+        linear-gradient(to right, #070B14 0%, rgba(7, 11, 20, 0.938) 45%, rgba(7, 11, 20, 0.503) 100%),
+        linear-gradient(to left, #070b1451 0%, rgba(7, 11, 20, 0.056) 45%, rgba(7, 11, 20, 0.001) 100%),
+        url("../img/fundoSecaoHero.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-left: 150px;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    
+}
+
+.hero h1{
+    font-size: 5.5rem;
+    width: 40vw;
+    margin: 0;
+    padding: 0;
+}
+
+.hero p{
+    font-size: 1.8rem;
+    width: 35vw;
+    color: #d4d4d4;
+}
+
+.div_linksHero a:nth-child(2){
+    font-size: 1.4rem;
+    margin-left: 40px;
+    color: #fff;
+}
+
+.div_linksHero a:nth-child(2):hover{
+    color: #fff200;
+    transition: .5s;
+
 }
