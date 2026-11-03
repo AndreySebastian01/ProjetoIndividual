@@ -343,3 +343,155 @@ main{
     width: 400px;
     color: #b3b3b3;
 }
+
+.cronologia{
+    padding: 80px 150px;
+}
+
+.div_cronologia{
+    display: flex;
+    align-items: flex-end;
+    gap: 100px;
+}
+
+.div_cronologia a{
+    color: #b3b3b3;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.div_cronologia a:hover{
+    color: #fff200;
+    transition: .5s;
+}
+
+.div_cronologia div p:first-child{
+    font-size: 1.4rem;
+    color: #8b8b8b;
+}
+
+.div_cronologia div h1{
+    color: #fff;
+    font-size: 4.5rem;
+}
+
+.div_cronologia div p{
+    font-size: 1.3rem;
+    color: #a7a7a7;
+    width: 470px;
+    font-weight: 600;
+}
+
+.cronologia ol{
+    list-style: none;
+    color: #fff;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.card_cronologia{
+    display: block;
+    width: 150px;
+    position: relative;
+    isolation: isolate;
+    text-decoration: none;
+}
+
+.card_cronologia::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(180deg,rgba(106, 116, 158, 0) 0%, rgba(10, 18, 32, 1) 80%),
+        url("../img/ep1.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(50%);
+    z-index: 0;
+}
+
+.card_ep2::before {
+    background-image:
+        linear-gradient(180deg,rgba(106, 116, 158, 0) 0%, rgba(10, 18, 32, 1) 80%),
+        url("../img/ep2.jpg");
+}
+
+.card_ep3::before {
+    background-image:
+        linear-gradient(180deg,rgba(106, 116, 158, 0) 0%, rgba(10, 18, 32, 1) 80%),
+        url("../img/ep3.jpg");
+}
+
+.card_ep4::before {
+    background-image:
+        linear-gradient(180deg,rgba(106, 116, 158, 0) 0%, rgba(10, 18, 32, 1) 80%),
+        url("../img/ep4.jpg");
+}
+
+.card_ep5::before {
+    background-image:
+        linear-gradient(180deg,rgba(106, 116, 158, 0) 0%, rgba(10, 18, 32, 1) 80%),
+        url("../img/ep5.jpg");
+}
+
+.card_ep6::before {
+    background-image:
+        linear-gradient(180deg,rgba(106, 116, 158, 0) 0%, rgba(10, 18, 32, 1) 80%),
+        url("../img/ep6.jpg");
+}
+
+.card_ep7::before {
+    background-image:
+        linear-gradient(180deg,rgba(106, 116, 158, 0) 0%, rgba(10, 18, 32, 1) 80%),
+        url("../img/ep7.jpg");
+}
+
+.card_ep8::before {
+    background-image:
+        linear-gradient(180deg,rgba(106, 116, 158, 0) 0%, rgba(10, 18, 32, 1) 80%),
+        url("../img/ep8.jpg");
+}
+
+.card_ep9::before {
+    background-image:
+        linear-gradient(180deg,rgba(106, 116, 158, 0) 0%, rgba(10, 18, 32, 1) 80%),
+        url("../img/ep9.jpg");
+}
+
+.card_cronologia:hover::before {
+    filter: grayscale(0%);
+}
+
+.card_cronologia .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    padding: 12px;
+    z-index: 1;
+}
+
+.card_cronologia .card p{
+    position: relative;
+    margin: 0;
+    color: #fff;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.card_cronologia > p{
+    position: relative;
+    margin-top: 8px;
+    color: #a7a7a7;
+    font-size: 1rem;
+    z-index: 1;
+    background-color: #0A1220;
+    padding: 4px;
+    border-top: 1px solid #a7a7a780;
+}
