@@ -47,6 +47,10 @@ header.header-solid{
     background-color: #070B14;
 }
 
+.menuHamburguer{
+    display: none;
+}
+
 header h1{
     font-size: 1.4rem;
 }
@@ -809,4 +813,443 @@ footer hr{
     color: #8290a7;
     font-size: 1.1rem;
     line-height: 1.65;
+}
+
+@media (max-width: 1100px){
+    header{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .navHeader ol li{
+        margin: 0 12px;
+    }
+
+    .hero,
+    .comoFunciona,
+    .modelo,
+    .cronologia,
+    .resultado,
+    footer{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .hero h1{
+        width: min(650px, 70vw);
+    }
+
+    .hero p{
+        width: min(600px, 65vw);
+    }
+
+    .comoFunciona ol li,
+    .modelo ol li{
+        width: 48vw;
+    }
+
+    .div_modelo_texto,
+    .div_comoFunciona_texto{
+        flex: 0 0 38%;
+    }
+
+    .resultado_card{
+        width: 38vw;
+    }
+
+    .div_texto_resultado{
+        width: calc(62vw - 130px);
+    }
+
+    .p_resultado3{
+        width: 100%;
+    }
+
+    .cta{
+        padding-left: 60px;
+        padding-right: 60px;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 900px){
+    header{
+        padding: 12px 30px;
+    }
+
+    .navHeader{
+        display: none;
+    }
+
+    .menuHamburguer{
+        display: flex;
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+        border: 1px solid #ffffff38;
+        border-radius: 3px;
+        background: transparent;
+        cursor: pointer;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        flex-shrink: 0;
+        position: relative;
+        z-index: 1101;
+    }
+
+    .menuHamburguer span{
+        display: block;
+        width: 22px;
+        height: 2px;
+        background-color: #fff;
+        transition: transform .25s ease, opacity .25s ease;
+    }
+
+    .menuHamburguer.aberto span:nth-child(1){
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .menuHamburguer.aberto span:nth-child(2){
+        opacity: 0;
+    }
+
+    .menuHamburguer.aberto span:nth-child(3){
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .navHeader.aberto{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: min(82vw, 320px);
+        height: 100vh;
+        height: 100dvh;
+        display: block;
+        z-index: 1100;
+        padding: 90px 30px 30px;
+        border-left: 1px solid #ffffff18;
+        background-color: #070b14;
+        box-shadow: -15px 0 35px rgba(0, 0, 0, .55);
+        animation: abrirSidebar .25s ease-out;
+    }
+
+    .navHeader.aberto ol{
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .navHeader.aberto ol li{
+        margin: 0;
+        padding: 12px 0;
+        font-size: 1.4rem;
+    }
+
+    .navHeader.aberto ol li.ativo::after{
+        bottom: 4px;
+        width: 45px;
+    }
+
+    @keyframes abrirSidebar{
+        from{
+            transform: translateX(100%);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+
+    .hero,
+    .comoFunciona,
+    .modelo,
+    .cronologia,
+    .resultado,
+    footer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .hero{
+        padding-top: 110px;
+        padding-bottom: 80px;
+    }
+
+    .hero h1{
+        width: 80%;
+        font-size: 4.6rem;
+    }
+
+    .hero p{
+        width: 75%;
+    }
+
+    .comoFunciona,
+    .modelo{
+        gap: 45px;
+    }
+
+    .comoFunciona ol li,
+    .modelo ol li{
+        width: 52vw;
+    }
+
+    .div_comoFunciona_texto p,
+    .modelo_p_intro,
+    .modelo_p_aviso{
+        width: 100%;
+    }
+
+    .div_cronologia{
+        gap: 30px;
+        align-items: center;
+    }
+
+    .div_cronologia div p{
+        width: min(470px, 55vw);
+    }
+
+    .resultado_card{
+        width: 42vw;
+    }
+
+    .div_texto_resultado{
+        width: calc(58vw - 100px);
+        margin-left: 40px;
+    }
+
+    .cta{
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 60px 30px;
+    }
+
+    .cta_acao{
+        text-align: left;
+    }
+
+    .footer_conteudo{
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .footer_creditos{
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 700px){
+    html{
+        font-size: 58%;
+    }
+
+    header{
+        min-height: 60px;
+        padding: 10px 20px;
+    }
+
+    .div_buttonsHeader{
+        display: none;
+    }
+
+    .tituloHeader p{
+        display: none;
+    }
+
+    .div_buttonsHeader .botaoQuiz{
+        padding: 8px 14px;
+    }
+
+    .hero,
+    .comoFunciona,
+    .modelo,
+    .cronologia,
+    .resultado,
+    .cta,
+    footer{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero h1{
+        width: 100%;
+        font-size: 3.8rem;
+    }
+
+    .hero p{
+        width: 100%;
+    }
+
+    .div_linksHero{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .div_linksHero a:nth-child(2){
+        margin-left: 0;
+    }
+
+    .comoFunciona,
+    .modelo,
+    .resultado{
+        flex-direction: column;
+    }
+
+    .comoFunciona ol,
+    .modelo ol,
+    .comoFunciona ol li,
+    .modelo ol li{
+        width: 100%;
+    }
+
+    .div_comoFunciona_texto,
+    .div_modelo_texto{
+        flex: none;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .div_comoFunciona_texto h1,
+    .div_modelo_texto h1,
+    .div_cronologia div h1,
+    .div_texto_resultado h1,
+    .cta_texto h1{
+        font-size: 3.6rem;
+    }
+
+    .div_cronologia{
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .div_cronologia div p{
+        width: 100%;
+    }
+
+    .cronologia ol{
+        gap: 20px;
+    }
+
+    .card_cronologia{
+        width: calc((100vw - 80px) / 2);
+        max-width: 150px;
+    }
+
+    .card_cronologia .card{
+        width: 100%;
+    }
+
+    .resultado_card{
+        width: 100%;
+        height: min(520px, 110vw);
+    }
+
+    .div_texto_resultado{
+        width: 100%;
+        margin: 35px 0 0;
+    }
+
+    .div_texto_resultado ol li{
+        grid-template-columns: 140px 1fr;
+    }
+
+    .resultado_botoes{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .resultado_botoes a:nth-child(2){
+        margin-left: 0;
+    }
+
+    .cta_texto .cta_rotulo{
+        letter-spacing: 2px;
+    }
+
+    .cta_acao a{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .cta_acao p{
+        white-space: normal;
+    }
+
+    footer{
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .footer_conteudo{
+        grid-template-columns: 1fr;
+    }
+
+    .footer_creditos{
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 420px){
+    header{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    header h1{
+        font-size: 1.2rem;
+    }
+
+    .div_buttonsHeader .botaoQuiz{
+        font-size: 1rem;
+        padding: 7px 10px;
+    }
+
+    .hero,
+    .comoFunciona,
+    .modelo,
+    .cronologia,
+    .resultado,
+    .cta,
+    footer{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hero h1{
+        font-size: 3.2rem;
+    }
+
+    .comoFunciona ol li,
+    .modelo ol li{
+        gap: 6px;
+    }
+
+    .modelo ol li > p{
+        display: none;
+    }
+
+    .div_texto_resultado ol li{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "item-1"
+            "item-2";
+    }
+
+    .div_texto_resultado ol li p{
+        padding: 8px 0;
+    }
+
+    .resultado_botoes a:first-child{
+        width: 100%;
+        text-align: center;
+    }
+
+    .cta_texto h1{
+        font-size: 3rem;
+    }
 }

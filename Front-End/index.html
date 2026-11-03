@@ -17,7 +17,7 @@
             <p>QUIZ COM PERSONAGENS DO EPISÓDIO I-IX</p>
         </div>
 
-        <nav class="navHeader" aria-label="Navegação principal">
+        <nav class="navHeader" id="menuNavegacao" aria-label="Navegação principal">
             <ol>
                 <li class="ativo"><a href="#inicio">Inicio</a></li>
                 <li><a href="#cronologia">Cronologia</a></li>
@@ -28,6 +28,11 @@
         <div class="div_buttonsHeader">
             <a href="#quiz" class="botaoQuiz">Fazer o Quiz</a>
         </div>
+        <button class="menuHamburguer" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menuNavegacao">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
 
     <main>
@@ -342,6 +347,39 @@
                 });
                 item.classList.add("ativo");
             });
+        });
+
+        const menuHamburguer = document.querySelector(".menuHamburguer");
+        const menuNavegacao = document.querySelector(".navHeader");
+
+        const fecharMenu = () => {
+            menuHamburguer.classList.remove("aberto");
+            menuNavegacao.classList.remove("aberto");
+            menuHamburguer.setAttribute("aria-expanded", "false");
+            menuHamburguer.setAttribute("aria-label", "Abrir menu");
+        };
+
+        menuHamburguer.addEventListener("click", () => {
+            const estaAberto = menuHamburguer.classList.toggle("aberto");
+            menuNavegacao.classList.toggle("aberto", estaAberto);
+            menuHamburguer.setAttribute("aria-expanded", String(estaAberto));
+            menuHamburguer.setAttribute("aria-label", estaAberto ? "Fechar menu" : "Abrir menu");
+        });
+
+        document.querySelectorAll(".navHeader a").forEach((link) => {
+            link.addEventListener("click", fecharMenu);
+        });
+
+        document.addEventListener("keydown", (evento) => {
+            if (evento.key === "Escape") {
+                fecharMenu();
+            }
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 900) {
+                fecharMenu();
+            }
         });
 
         const header = document.querySelector("header");
