@@ -706,3 +706,107 @@ main{
     text-transform: uppercase;
     white-space: nowrap;
 }
+
+footer{
+    min-height: 410px;
+    padding: 70px 150px 35px;
+    color: #aeb7c8;
+    background-color: #070b14;
+}
+
+.footer_conteudo{
+    display: grid;
+    grid-template-columns: 1.25fr 0.7fr 1.05fr;
+    gap: 70px;
+}
+
+.footer_coluna{
+    min-width: 0;
+}
+
+.footer_coluna h2{
+    margin-bottom: 18px;
+    color: #fff200;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.footer_coluna p,
+.footer_coluna a{
+    font-size: 1.2rem;
+    line-height: 1.55;
+}
+
+.footer_sobre p{
+    max-width: 450px;
+}
+
+.footer_sobre > a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer_sobre > a svg{
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+.footer_sobre > a:hover{
+    color: #fff200;
+}
+
+.footer_navegacao{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_navegacao a{
+    margin-bottom: 12px;
+    color: #aeb7c8;
+    text-decoration: none;
+}
+
+.footer_navegacao a:hover,
+.footer_creditos a:hover{
+    color: #fff200;
+}
+
+.footer_creditos{
+    max-width: 520px;
+}
+
+.footer_creditos p{
+    margin-bottom: 18px;
+}
+
+.footer_creditos a{
+    color: #aeb7c8;
+}
+
+.footer_creditos .footer_aviso{
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    line-height: 1.45;
+}
+
+footer hr{
+    height: 1px;
+    margin: 45px 0 22px;
+    border: 0;
+    background-color: #1d2637;
+}
+
+.footer_legal{
+    max-width: 1500px;
+    color: #8290a7;
+    font-size: 1.1rem;
+    line-height: 1.65;
+}
