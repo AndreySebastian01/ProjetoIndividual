@@ -258,6 +258,7 @@ main{
     padding: 80px 150px;
     color: #fff;
     background-color: #0A1220;
+    border-bottom: 1px solid #5555554a;
     /* margin: 80px 0px; */
 }
 
@@ -346,6 +347,7 @@ main{
 
 .cronologia{
     padding: 80px 150px;
+    border-bottom: 1px solid #5555554a;
 }
 
 .div_cronologia{
@@ -500,6 +502,7 @@ main{
     display: flex;
     background-color: #0A1220;
     padding: 80px 150px;
+    border-bottom: 1px solid #5555554a;
 }
 
 .resultado_card{
@@ -616,4 +619,90 @@ main{
 .resultado_botoes a:nth-child(2):hover{
     color: #fff200;
     transition: .5s;
+}
+
+.cta{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    align-items: end;
+    gap: 80px;
+    min-height: 310px;
+    padding: 80px 205px 65px;
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 1px solid #5555554a;
+    background-image: linear-gradient(to right, #070B14 0%, rgba(7, 11, 20, 0.938) 45%, rgba(7, 11, 20, 0.503) 100%),
+        linear-gradient(to left, #070b1451 0%, rgba(7, 11, 20, 0.056) 45%, rgba(7, 11, 20, 0.001) 100%),
+        url("../img/images.jpg");
+    background-position: top right;
+    background-size: cover;
+}
+
+.cta_texto{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cta_texto .cta_rotulo{
+    color: #c9c9c9;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.cta_texto h1{
+    max-width: 920px;
+    font-size: 4.8rem;
+    line-height: 1.08;
+    font-weight: 700;
+}
+
+.cta_descricao{
+    max-width: 760px;
+    color: #a7a7a7;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.cta_acao{
+    text-align: right;
+}
+
+.cta_acao a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 300px;
+    padding: 15px 20px;
+    border-radius: 2px;
+    background-color: #fff200;
+    color: #070b14;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.cta_acao a span{
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.cta_acao a:hover{
+    filter: brightness(.9);
+    transition: .3s;
+}
+
+.cta_acao p{
+    margin-top: 18px;
+    color: #d5d5d5;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 1.15rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
