@@ -143,7 +143,7 @@ main{
         linear-gradient(to right, #070B14 0%, rgba(7, 11, 20, 0.938) 45%, rgba(7, 11, 20, 0.503) 100%),
         linear-gradient(to left, #070b1451 0%, rgba(7, 11, 20, 0.056) 45%, rgba(7, 11, 20, 0.001) 100%),
         url("../img/fundoSecaoHero.jpg");
-    background-position: center;
+    background-position: top center;
     background-size: cover;
     padding-left: 150px;
     padding-top: 100px;
