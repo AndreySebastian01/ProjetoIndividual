@@ -4,3 +4,4 @@ package-lock.json
 .vscode/
 .github
 .env
+.env.dev
