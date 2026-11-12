@@ -35,17 +35,17 @@
         </button>
     </header>
 
-    <main class="quiz-intro">
-        <section class="quiz-intro__content" aria-labelledby="quiz-title">
-            <p class="quiz-eyebrow">FICHA DE IDENTIFICAÇÃO</p>
+    <main class="quiz_intro">
+        <section class="quiz_intro_conteudo" aria-labelledby="quiz-title">
+            <p class="quiz_rotulo">FICHA DE IDENTIFICAÇÃO</p>
             <h1 id="quiz-title">Seu e-mail abre<br>o arquivo.</h1>
-            <p class="quiz-intro__description">
+            <p class="quiz_intro_descricao">
                 Antes das dez perguntas, informe um endereço de e-mail. Ele não cria
                 conta nem inicia sessão: serve para vincular esta tentativa ao histórico
                 e, na versão completa, enviar o resultado.
             </p>
 
-            <form class="quiz-email-form">
+            <form class="quiz_form_email" id="quiz_form_email">
                 <label for="email">ENDEREÇO DE E-MAIL <span aria-hidden="true">*</span></label>
                 <input
                     id="email"
@@ -57,14 +57,14 @@
                     aria-describedby="email-hint"
                     required
                 >
-                <p class="quiz-email-form__hint" id="email-hint">
+                <p class="quiz_form_dica" id="email-hint">
                     Usado apenas para identificar a tentativa. Sem cadastro, sem senha, sem login.
                 </p>
-                <div class="quiz-email-form__actions">
-                    <button class="botaoQuiz" type="button">
+                <div class="quiz_form_acoes">
+                    <button class="botaoQuiz" type="submit">
                         INICIAR QUESTIONÁRIO <span aria-hidden="true">→</span>
                     </button>
-                    <span class="quiz-duration">10 PERGUNTAS · ±3 MINUTOS</span>
+                    <span class="quiz_duracao">10 PERGUNTAS · ±3 MINUTOS</span>
                 </div>
             </form>
         </section>

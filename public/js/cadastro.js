@@ -52,3 +52,8 @@ let atualizarHeader = () => {
 
 atualizarHeader();
 window.addEventListener("scroll", atualizarHeader);
+
+document.querySelector("#quiz_form_email").addEventListener("submit", (evento) => {
+    evento.preventDefault();
+    window.location.href = "quiz.html";
+});
