@@ -1,0 +1,294 @@
+{
+  "perguntas": [
+    {
+      "id": 1,
+      "dimensao": "abertura",
+      "titulo": "O sinal desconhecido",
+      "contexto": "Durante uma missão de reconhecimento, sua equipe detecta um sinal desconhecido vindo de uma região inexplorada. A missão atual já possui uma rota segura definida. O que você faria?",
+      "pergunta": "O que você faria?",
+      "respostas": [
+        {
+          "opcao": "A",
+          "resposta": "Proporia investigar o sinal e levantar hipóteses antes de decidir que ele não tem importância.",
+          "valor": 1
+        },
+        {
+          "opcao": "B",
+          "resposta": "Seguiria a rota confirmada e evitaria desviar a missão por causa de algo desconhecido.",
+          "valor": -1
+        },
+        {
+          "opcao": "C",
+          "resposta": "Tentaria realizar um pequeno teste para descobrir se existe alguma explicação nova para o sinal.",
+          "valor": 1
+        },
+        {
+          "opcao": "D",
+          "resposta": "Preferiria utilizar os métodos já conhecidos e deixar a investigação para outra ocasião.",
+          "valor": -1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "dimensao": "abertura",
+      "titulo": "Uma cultura desconhecida",
+      "contexto": "Em um planeta, você conhece uma população que possui costumes muito diferentes dos seus. Um ritual local parece estranho à primeira vista, mas você não conhece seu significado.",
+      "pergunta": "Como você reagiria?",
+      "respostas": [
+        {
+          "opcao": "A",
+          "resposta": "Interpretaria o ritual com base nos costumes que já conhece, sem procurar outras explicações.",
+          "valor": -1
+        },
+        {
+          "opcao": "B",
+          "resposta": "Conversaria com os habitantes para entender o significado do ritual e conhecer sua perspectiva.",
+          "valor": 1
+        },
+        {
+          "opcao": "C",
+          "resposta": "Manteria sua interpretação inicial, a menos que alguém apresentasse provas claras de que ela está errada.",
+          "valor": -1
+        },
+        {
+          "opcao": "D",
+          "resposta": "Consideraria que o ritual pode ter um significado diferente daquele que imaginou e exploraria outras interpretações.",
+          "valor": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "dimensao": "conscienciosidade",
+      "titulo": "Preparação para a missão",
+      "contexto": "Você tem 20 minutos para preparar sua equipe antes de partir em uma missão importante. O que faria?",
+      "pergunta": "Como você organizaria a preparação?",
+      "respostas": [
+        {
+          "opcao": "A",
+          "resposta": "Definiria as prioridades, distribuiria responsabilidades e verificaria os equipamentos antes da partida.",
+          "valor": 1
+        },
+        {
+          "opcao": "B",
+          "resposta": "Partiria assim que a equipe parecesse pronta, resolvendo os detalhes necessários durante o percurso.",
+          "valor": -1
+        },
+        {
+          "opcao": "C",
+          "resposta": "Reservaria parte do tempo para conferir uma lista de verificação e pensar em possíveis imprevistos.",
+          "valor": 1
+        },
+        {
+          "opcao": "D",
+          "resposta": "Concentraria os esforços no que parece mais urgente, deixando os detalhes menos evidentes para depois.",
+          "valor": -1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "dimensao": "conscienciosidade",
+      "titulo": "A transferência de informações",
+      "contexto": "Você é responsável por um dispositivo que contém informações importantes para a Resistência. Ao terminar seu turno, outra pessoa assumirá a responsabilidade pelo equipamento.",
+      "pergunta": "Como você faria a transferência?",
+      "respostas": [
+        {
+          "opcao": "A",
+          "resposta": "Explicaria verbalmente os pontos principais e confiaria que os detalhes seriam lembrados.",
+          "valor": -1
+        },
+        {
+          "opcao": "B",
+          "resposta": "Registraria o estado do dispositivo, as tarefas realizadas e as pendências para o próximo responsável.",
+          "valor": 1
+        },
+        {
+          "opcao": "C",
+          "resposta": "Entregaria o equipamento assim que possível, deixando a conferência dos detalhes para quem assumisse o turno.",
+          "valor": -1
+        },
+        {
+          "opcao": "D",
+          "resposta": "Verificaria o equipamento, confirmaria a integridade das informações e documentaria a transferência.",
+          "valor": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "dimensao": "extroversao",
+      "titulo": "A reunião da equipe",
+      "contexto": "Você participa de uma reunião na base da Resistência para discutir o próximo plano de ação. A equipe está reunida, mas ninguém começa a apresentar ideias.",
+      "pergunta": "Como você participaria?",
+      "respostas": [
+        {
+          "opcao": "A",
+          "resposta": "Apresentaria sua primeira ideia em voz alta para iniciar a discussão.",
+          "valor": 1
+        },
+        {
+          "opcao": "B",
+          "resposta": "Preferiria organizar seus pensamentos e falar apenas quando estivesse pronto para contribuir.",
+          "valor": -1
+        },
+        {
+          "opcao": "C",
+          "resposta": "Participaria espontaneamente da conversa e desenvolveria ideias junto com os demais.",
+          "valor": 1
+        },
+        {
+          "opcao": "D",
+          "resposta": "Preferiria compartilhar suas ideias individualmente ou por escrito depois da reunião.",
+          "valor": -1
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "dimensao": "extroversao",
+      "titulo": "Tempo livre na nave",
+      "contexto": "Após uma missão longa, você finalmente tem uma noite livre a bordo de uma nave. Não existe nenhuma obrigação imediata.",
+      "pergunta": "Como você preferiria passar esse tempo?",
+      "respostas": [
+        {
+          "opcao": "A",
+          "resposta": "Procuraria um lugar tranquilo para ficar sozinho e recuperar as energias.",
+          "valor": -1
+        },
+        {
+          "opcao": "B",
+          "resposta": "Ficaria na área comum conversando com outras pessoas, pois a interação ajudaria a recuperar as energias.",
+          "valor": 1
+        },
+        {
+          "opcao": "C",
+          "resposta": "Preferiria uma atividade individual ou a companhia de poucas pessoas próximas.",
+          "valor": -1
+        },
+        {
+          "opcao": "D",
+          "resposta": "Organizaria um encontro informal com a equipe e aproveitaria a oportunidade para interagir com todos.",
+          "valor": 1
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "dimensao": "amabilidade",
+      "titulo": "O erro de um companheiro",
+      "contexto": "Durante uma missão, um integrante da equipe comete um erro que danifica um equipamento importante. A situação ainda pode ser corrigida, mas vocês perderam tempo.",
+      "pergunta": "Como você reagiria?",
+      "respostas": [
+        {
+          "opcao": "A",
+          "resposta": "Perguntaria o que aconteceu e ajudaria a corrigir o problema sem humilhar o integrante.",
+          "valor": 1
+        },
+        {
+          "opcao": "B",
+          "resposta": "Deixaria claro que o erro prejudicou a equipe e concentraria a conversa na falha, mesmo que a abordagem causasse atrito.",
+          "valor": -1
+        },
+        {
+          "opcao": "C",
+          "resposta": "Ouviria a explicação do integrante e procuraria uma solução que corrigisse o problema e tratasse todos com respeito.",
+          "valor": 1
+        },
+        {
+          "opcao": "D",
+          "resposta": "Priorizaria a responsabilização pelo erro, sem flexibilizar a cobrança para preservar os sentimentos de quem o cometeu.",
+          "valor": -1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "dimensao": "amabilidade",
+      "titulo": "O conflito de planos",
+      "contexto": "Dois integrantes da equipe discordam sobre a melhor rota para uma operação de resgate. Você possui uma opinião própria, mas sabe que a equipe precisa chegar a uma decisão.",
+      "pergunta": "Como você agiria?",
+      "respostas": [
+        {
+          "opcao": "A",
+          "resposta": "Defenderia seu plano e seguiria adiante mesmo que os outros sentissem que suas opiniões foram ignoradas.",
+          "valor": -1
+        },
+        {
+          "opcao": "B",
+          "resposta": "Ouviria os argumentos dos dois lados e procuraria uma solução que contemplasse as preocupações de ambos.",
+          "valor": 1
+        },
+        {
+          "opcao": "C",
+          "resposta": "Manteria sua posição sem modificá-la apenas para evitar uma discussão.",
+          "valor": -1
+        },
+        {
+          "opcao": "D",
+          "resposta": "Procuraria os pontos em comum entre as propostas e sugeriria uma alternativa que preservasse a cooperação.",
+          "valor": 1
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "dimensao": "neuroticismo",
+      "titulo": "O alerta de emergência",
+      "contexto": "Durante um voo, o sistema de sua nave detecta uma possível ameaça. O alarme dispara, mas as informações disponíveis ainda não permitem saber a gravidade do perigo.",
+      "pergunta": "O que normalmente aconteceria com você?",
+      "respostas": [
+        {
+          "opcao": "A",
+          "resposta": "Começaria a imaginar os piores cenários e teria dificuldade para parar de me preocupar até saber que está tudo bem.",
+          "valor": 1
+        },
+        {
+          "opcao": "B",
+          "resposta": "Sentiria tensão, mas concentraria minha atenção na próxima ação necessária e me tranquilizaria conforme surgissem informações.",
+          "valor": -1
+        },
+        {
+          "opcao": "C",
+          "resposta": "Ficaria repassando mentalmente as possíveis consequências enquanto aguardasse a confirmação do que está acontecendo.",
+          "valor": 1
+        },
+        {
+          "opcao": "D",
+          "resposta": "Manteria o foco nas informações disponíveis e me adaptaria às mudanças sem ficar preso às possibilidades negativas.",
+          "valor": -1
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "dimensao": "neuroticismo",
+      "titulo": "A crítica após a missão",
+      "contexto": "Depois de uma operação, seu comandante afirma que uma decisão sua colocou a equipe em risco. Você reconhece que a situação foi séria, mas sabe que nem todas as circunstâncias estavam sob seu controle.",
+      "pergunta": "Como você lidaria com essa crítica?",
+      "respostas": [
+        {
+          "opcao": "A",
+          "resposta": "Refletiria sobre a crítica, identificaria o que precisa melhorar e conseguiria recuperar o equilíbrio emocional depois disso.",
+          "valor": -1
+        },
+        {
+          "opcao": "B",
+          "resposta": "Continuaria pensando na crítica por bastante tempo, preocupado com o que ela pode significar sobre minha capacidade.",
+          "valor": 1
+        },
+        {
+          "opcao": "C",
+          "resposta": "Separaria o erro cometido do meu valor pessoal, aproveitaria o aprendizado e seguiria em frente.",
+          "valor": -1
+        },
+        {
+          "opcao": "D",
+          "resposta": "Ficaria preocupado com o que a equipe pensa de mim, mesmo depois de entender a crítica e receber esclarecimentos.",
+          "valor": 1
+        }
+      ]
+    }
+  ]
+}
