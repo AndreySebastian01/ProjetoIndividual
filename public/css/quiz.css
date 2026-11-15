@@ -470,7 +470,8 @@ body {
 
 .result-actions {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    gap: 16px;
     margin-top: 28px;
     padding-bottom: 24px;
 }
@@ -478,6 +479,17 @@ body {
 .restart-button {
     justify-self: auto;
     min-width: 220px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+}
+
+.chart-unavailable {
+    margin: 12px 0 0;
+    color: #858d9d;
+    font-size: 1.2rem;
 }
 
 [hidden] {
@@ -567,6 +579,14 @@ body {
 
     .result-summary h1 {
         font-size: 3.4rem;
+    }
+
+    .result-actions {
+        flex-direction: column-reverse;
+    }
+
+    .result-actions .restart-button {
+        width: 100%;
     }
 }
 
