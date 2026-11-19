@@ -53,7 +53,37 @@ let atualizarHeader = () => {
 atualizarHeader();
 window.addEventListener("scroll", atualizarHeader);
 
-document.querySelector("#quiz_form_email").addEventListener("submit", (evento) => {
+const formularioEmail = document.querySelector("#quiz_form_email");
+const campoEmail = formularioEmail.querySelector("#email");
+const botaoIniciarQuiz = formularioEmail.querySelector('button[type="submit"]');
+
+campoEmail.addEventListener("input", () => campoEmail.setCustomValidity(""));
+
+formularioEmail.addEventListener("submit", async (evento) => {
     evento.preventDefault();
-    window.location.href = "quiz.html";
+
+    botaoIniciarQuiz.disabled = true;
+    campoEmail.setCustomValidity("");
+
+    try {
+        sessionStorage.removeItem("dashboardData");
+        const resposta = await fetch("/api/quiz/validar-email", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email: campoEmail.value })
+        });
+        const dados = await resposta.json();
+
+        if (!resposta.ok) {
+            throw new Error(dados.erro || "Não foi possível validar o e-mail.");
+        }
+
+        sessionStorage.setItem("quizEmail", dados.email);
+        window.location.href = "quiz.html";
+    } catch (erro) {
+        console.error("Não foi possível validar o e-mail do quiz.", erro);
+        campoEmail.setCustomValidity(erro.message || "Não foi possível conectar ao servidor.");
+        campoEmail.reportValidity();
+        botaoIniciarQuiz.disabled = false;
+    }
 });
